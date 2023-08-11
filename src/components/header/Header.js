@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from "./header.module.css"
-import tesla_logo from "../images/tesla_black.png"
+import tesla_logo from "../images/menu_item/tesla_black.png"
 
 const Header = () => {
   return (
