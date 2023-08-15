@@ -1,8 +1,15 @@
 import React from 'react'
+import Header from "../../components/header/Header"
+import styles from "./modelX.module.css"
 
 const ModelX = () => {
   return (
-	<div>ModelX</div>
+    <>
+    <div className={styles.container}>
+      <Header />
+    </div>
+    <div>Model X</div>
+  </>
   )
 }
 
