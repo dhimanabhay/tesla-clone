@@ -1,31 +1,43 @@
+* {
+    transition: all 0.3s;
+}
 
 .sidebar {
     position: fixed;
     right: 0;
     text-underline-position: 0;
     height: 100vh;
-    width: 20vw;
+    width: max(20vw, 200px);
     background-color: white;
-    filter: blur(0px);
-    z-index: 10;
-}
-
-.sidebar {
     padding: 2vh 1vw;
+    z-index: 200;
 }
 
 .sidebar > button {
-    width: 100%;
-    text-align: right;
+    position: absolute;
+    right: 0;
+    padding: 0.5vh 1.5vw;
     font-size: large;
+    cursor: pointer;
+    background: none;
+    text-transform: uppercase;
 }
 
 .list {
     margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
 }
 
 .list > li {
-    height: 7vh;
     font-weight: bolder;
     margin: 1vh 0;
+    padding: 1vh 2vh;
+    cursor: pointer;
+}
+
+.list > li:hover,
+.sidebar > button:hover {
+    background-color: var(--hover-background);
 }

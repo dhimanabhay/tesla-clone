@@ -1,8 +1,9 @@
-import React, { useState } from 'react'
-import Sidebar from '../sidebar/Sidebar'
+import React, { useState } from "react";
+import Sidebar from "../sidebar/Sidebar";
 
-import styles from "./header.module.css"
-import tesla_logo from "../images/menu_item/tesla_black.png"
+import styles from "./header.module.css";
+import tesla_logo from "../images/menu_item/tesla_black.png";
+import Backdrop from "../backdrop/Backdrop";
 
 // const headerElements =[
 //   { label: 'TESLA', route: '/'},
@@ -19,20 +20,33 @@ const Header = () => {
 
   return (
     <>
-      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      {showSidebar && (
+        <>
+          <Backdrop onClick={() => setShowSidebar(false)} />
+        </>
+      )}
 
+      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div className={styles.container}>
         <div className={styles.head_logo}>
-          <a href='/'>
-            <img src={tesla_logo} alt='Tesla'></img>
+          <a href="/">
+            <img src={tesla_logo} alt="Tesla"></img>
           </a>
         </div>
         <div className={styles.center_nav}>
           <ul>
-            <li><a href='model_3'>Model 3</a></li>
-            <li><a href='model_3'>Model S</a></li>
-            <li><a href='model_x'>Model X</a></li>
-            <li><a href='cybertruck'>Cyber Truck</a></li>
+            <li>
+              <a href="model_3">Model 3</a>
+            </li>
+            <li>
+              <a href="model_3">Model S</a>
+            </li>
+            <li>
+              <a href="model_x">Model X</a>
+            </li>
+            <li>
+              <a href="cybertruck">Cyber Truck</a>
+            </li>
           </ul>
           {/* <ul>
           {
@@ -44,13 +58,19 @@ const Header = () => {
         </div>
         <div className={styles.right_nav}>
           <ul>
-            <li><button><a href='/'>account</a></button></li>
-            <li><button onClick={() => setShowSidebar(true)}>menu</button></li>
+            <li>
+              <button>
+                <a href="/">account</a>
+              </button>
+            </li>
+            <li>
+              <button onClick={() => setShowSidebar(true)}>menu</button>
+            </li>
           </ul>
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

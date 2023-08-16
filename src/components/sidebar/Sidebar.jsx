@@ -5,10 +5,11 @@ const Sidebar = ({ showSidebar, setShowSidebar }) => {
     if (!showSidebar) return null;
     return (
         <>
+        <div className={styles.blur}></div>
             <div className={styles.container}>
 
                 <nav className={styles.sidebar}>
-                    <button onClick={() => setShowSidebar(false)}>X</button>
+                    <button onClick={() => setShowSidebar(false)}>x</button>
                     <ul className={styles.list}>
                         <li>Vehicles</li>
                         <li>Energy</li>

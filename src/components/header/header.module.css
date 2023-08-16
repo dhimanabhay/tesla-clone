@@ -37,7 +37,7 @@ button {
 }
 
 .head_logo > a > img {
-    height: 5vh;
+    height: 2rem;
 }
 
 /*---------*_nav----------*/
@@ -63,7 +63,7 @@ button {
 .right_nav > ul > li > a:hover,
 .right_nav > ul > li > button:hover  {
     transition: all 0.5s;
-    background-color: rgba(171, 171, 171, 0.4);
+    background-color: var(--hover-background); 
     border-radius: 0.4rem;
     cursor: pointer;
 }
