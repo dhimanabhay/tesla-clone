@@ -13,7 +13,7 @@ import Backdrop from "../backdrop/Backdrop";
 //   { label: 'Menu', route: null},
 // ]
 
-//1:18:55 / 5:07:57
+//1:34:55 / 5:07:57
 
 const Header = () => {
   const [showSidebar, setShowSidebar] = useState(false);
@@ -23,10 +23,12 @@ const Header = () => {
       {showSidebar && (
         <>
           <Backdrop onClick={() => setShowSidebar(false)} />
+          <Sidebar setShowSidebar={setShowSidebar} />
+
         </>
       )}
 
-      <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
+      {/* <Sidebar showSidebar={showSidebar} setShowSidebar={setShowSidebar} /> */}
       <div className={styles.container}>
         <div className={styles.head_logo}>
           <a href="/">
