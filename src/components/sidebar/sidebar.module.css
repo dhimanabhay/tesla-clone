@@ -1,16 +1,12 @@
-* {
-    transition: all 0.3s;
-}
-
 .sidebar {
     position: fixed;
     right: 0;
-    text-underline-position: 0;
     height: 100vh;
     width: max(20vw, 200px);
     background-color: white;
     padding: 2vh 1vw;
     z-index: 200;
+    color: black;
 }
 
 .sidebar > button {

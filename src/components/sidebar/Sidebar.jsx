@@ -1,8 +1,6 @@
-import React from "react";
 import styles from "./sidebar.module.css";
 
 export default function Sidebar({  setShowSidebar }) {
-  // if (!showSidebar) return null;
   return (
     <>
       <div className={styles.container}>
@@ -22,5 +20,3 @@ export default function Sidebar({  setShowSidebar }) {
     </>
   );
 };
-
-// showSidebar,

@@ -1,14 +1,9 @@
-import React from 'react'
-import Header from "../../components/header/Header"
-import styles from "./cybertruck.module.css"
+import "./cybertruck.css"
 
 const Cybetruck = () => {
   return (
     <>
-      <div className={styles.container}>
-        <Header />
-      </div>
-      <div>Cybetruck</div>
+      <h1>CyberTruck</h1>  
     </>
 	
   )

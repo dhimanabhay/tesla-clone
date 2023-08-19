@@ -1,14 +1,9 @@
-import React from "react";
-import Header from "../../components/header/Header";
-import styles from "./model3.module.css";
+import "./model3.css";
 
 const Model3 = () => {
   return (
     <>
-      <div className={styles.container}>
-        <Header />
-      </div>
-      <div>Model 3</div>
+      <h1>Model 3</h1>
     </>
   );
 };

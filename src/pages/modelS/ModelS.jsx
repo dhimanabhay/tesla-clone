@@ -1,16 +1,11 @@
-import React from 'react'
-import Header from "../../components/header/Header"
-import styles from "./modelS.module.css"
+import "./modelS.css"
 
 const ModelS = () => {
   return (
     <>
-    <div className={styles.container}>
-      <Header />
-    </div>
-    <div>Model S</div>
-  </>
-  )
-}
+      <h1>Model X</h1>  
+    </>
+  );
+};
 
 export default ModelS
