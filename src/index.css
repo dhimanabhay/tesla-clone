@@ -7,4 +7,10 @@ body {
     "Oxygen" "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
   color: whitesmoke;
   overflow-x: hidden;
+  -webkit-scrollbar {display:none;}
+
+}
+
+::-webkit-scrollbar {
+  display: none;
 }

@@ -1,7 +1,7 @@
 import styles from "./header.module.css";
 import tesla_logo from "../images/menu_item/tesla_black.png";
 
-//2:30:00 / 5:07:57
+//2:40:00 / 5:07:57
 
 export default function Header({setShowSidebar}){
 
