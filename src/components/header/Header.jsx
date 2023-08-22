@@ -3,7 +3,7 @@ import tesla_logo from "../images/menu_item/tesla_black.png";
 
 //2:40:00 / 5:07:57
 
-export default function Header({setShowSidebar}){
+export default function Header({setShowSidebar, Color}){
 
   return (
     <>
@@ -16,16 +16,16 @@ export default function Header({setShowSidebar}){
         <div className={styles.center_nav}>
           <ul>
             <li>
-              <a href="model_3">Model 3</a>
+              <a style={{ color: Color }} href="model_3">Model 3</a>
             </li>
             <li>
-              <a href="model_3">Model S</a>
+              <a style={{ color: Color }} href="model_s">Model S</a>
             </li>
             <li>
-              <a href="model_x">Model X</a>
+              <a style={{ color: Color }} href="model_x">Model X</a>
             </li>
             <li>
-              <a href="cybertruck">Cyber Truck</a>
+              <a style={{ color: Color }} href="cybertruck">Cyber Truck</a>
             </li>
           </ul>
         </div>
@@ -33,11 +33,11 @@ export default function Header({setShowSidebar}){
           <ul>
             <li>
               <button>
-                <a href="/">account</a>
+                <a style={{ color: Color }} href="/">account</a>
               </button>
             </li>
             <li>
-              <button onClick={() => setShowSidebar(true)}>menu</button>
+              <button style={{ color: Color }} onClick={() => setShowSidebar(true)}>menu</button>
             </li>
           </ul>
         </div>

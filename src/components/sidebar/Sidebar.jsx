@@ -1,6 +1,6 @@
 import styles from "./sidebar.module.css";
 
-export default function Sidebar({  setShowSidebar }) {
+export default function Sidebar({ setShowSidebar }) {
   return (
     <>
       <div className={styles.container}>

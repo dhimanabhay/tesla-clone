@@ -1,6 +1,6 @@
-import "./Homesection.css"
+import "./Homesection.css";
 
-const Homesection = ({ backgroundImage, header, description }) => {
+const Homesection = ({ backgroundImage, header, description, features = [] }) => {
   return (
     <div
       className="homeSection-image_background"
@@ -8,7 +8,7 @@ const Homesection = ({ backgroundImage, header, description }) => {
     >
       <div className="homeSection-overlay">
         <div className="top-section">
-          <h2>{header}</h2>
+          <h1>{header}</h1>
           <p>{description}</p>
         </div>
         <div className="bottom-section">

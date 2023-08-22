@@ -1,0 +1,31 @@
+.grid-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: black;
+}
+
+.grid-item {
+  height: 40vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+.grid-item:first-child {
+  flex-direction: row;
+}
+
+.grid-item > img {
+  background-size: cover;
+  width: 40vw;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40vw;
+
+}
