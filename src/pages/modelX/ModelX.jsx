@@ -7,7 +7,7 @@ import modelXHero from "../../components/images/pages_item/modelX-hero.jpg"
 
 const ModelX = () => {
   return (
-    <div className="contaienr">
+    <div className="container">
       <section className="section">
         <Homesection header="Model X" description="View Inventory" backgroundImage={modelXImage} />
       </section>
@@ -15,7 +15,7 @@ const ModelX = () => {
         <HeroImage backgroundImage={modelXHero} />
       </section>
     </div>
-  )
-}
+  );
+};
 
-export default ModelX;
+export default ModelX
