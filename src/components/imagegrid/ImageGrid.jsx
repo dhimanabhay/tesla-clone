@@ -1,6 +1,6 @@
 import './ImageGrid.css';
 
-const ImageGrid = ({ image1, image2, text1, text2, text1_description }) => {
+const ImageGrid = ({ image1, image2, text1, text2, text1_description, text2_description }) => {
     return (<div className="grid-container">
         <div className="grid-item">
             <img src={image1} alt="Image 1" />
@@ -12,7 +12,8 @@ const ImageGrid = ({ image1, image2, text1, text2, text1_description }) => {
         <div className="grid-item">
             <img src={image2} alt="Image 2" />
             <div className="text">
-                {text2}
+                <h3>{text2}</h3>
+                <p>{text2_description}</p>
             </div>
         </div>
     </div>

@@ -1,0 +1,64 @@
+.intro-container {
+    background-color: black;
+    width: 100%;
+    margin-top: 0;
+}
+
+.intro-top {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+}
+
+.intro-top > img {
+    width: 100%;
+    height: 105%;
+    object-fit: cover;
+}
+
+.intro-bottom {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    align-items: center;
+    height: 20vh;
+}
+
+.intro-left > h1 {
+    font-size: 2rem;
+    font-weight: lighter;
+    color: white;
+    
+}
+
+.intro-right {
+    line-height: 2.5vh;
+    width: 40%;
+}
+
+.intro-left > h1 {
+    color: white;
+}
+
+.intro-list {
+    border: 2px solid red;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 80vh;
+}
+
+.intro-list > ul {
+    height: 70%;
+    width: 20%;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    border: 2px solid blue;
+}

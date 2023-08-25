@@ -1,6 +1,9 @@
+
 import "./Homesection.css";
 
 const Homesection = ({ backgroundImage, header, description, features = [] }) => {
+
+
   return (
     <div
       className="homeSection-image_background"
@@ -16,7 +19,9 @@ const Homesection = ({ backgroundImage, header, description, features = [] }) =>
           <button>Demo Drive</button>
         </div>
       </div>
+      
     </div>
+    
   );
 };
 

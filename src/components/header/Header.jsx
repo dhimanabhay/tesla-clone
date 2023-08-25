@@ -1,43 +1,71 @@
-import styles from "./header.module.css";
 import tesla_logo from "../images/menu_item/tesla_black.png";
+import { useState, useEffect } from "react";
+import "./header.css"
 
-//2:40:00 / 5:07:57
+export default function Header({ setShowSidebar }) {
+  const [navbar, setNavbar] = useState(false);
+  const [hide, setHide] = useState(false);
 
-export default function Header({setShowSidebar, Color}){
+  let nav = document.getElementById('nav')
 
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY)
+      if (window.scrollY >= 50 && window.scrollY < 500) {
+        setHide(true)
+        setNavbar(false)
+      }
+      else if (window.scrollY >= 300){
+        setHide(false)
+        setNavbar(true)
+      }
+      else {
+        setHide(false)
+        setNavbar(false)
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const names = [navbar ? 'navbar active' : 'navbar', hide ? 'navbar hide' : 'navbar'].join(' ')
   return (
     <>
-      <div className={styles.container}>
-        <div className={styles.head_logo}>
+      <div id="nav" className={names}>
+        <div className="head_logo">
           <a href="/">
             <img src={tesla_logo} alt="Tesla"></img>
           </a>
         </div>
-        <div className={styles.center_nav}>
+        <div className="center_nav">
           <ul>
             <li>
-              <a style={{ color: Color }} href="model_3">Model 3</a>
+              <a href="model_3">Model 3</a>
             </li>
             <li>
-              <a style={{ color: Color }} href="model_s">Model S</a>
+              <a href="model_s">Model S</a>
             </li>
             <li>
-              <a style={{ color: Color }} href="model_x">Model X</a>
+              <a href="model_x">Model X</a>
             </li>
             <li>
-              <a style={{ color: Color }} href="cybertruck">Cyber Truck</a>
+              <a href="cybertruck">Cyber Truck</a>
             </li>
           </ul>
         </div>
-        <div className={styles.right_nav}>
+        <div className="right_nav">
           <ul>
             <li>
               <button>
-                <a style={{ color: Color }} href="/">account</a>
+                <a href="/">account</a>
               </button>
             </li>
             <li>
-              <button style={{ color: Color }} onClick={() => setShowSidebar(true)}>menu</button>
+              <button onClick={() => setShowSidebar(true)}>menu</button>
             </li>
           </ul>
         </div>
