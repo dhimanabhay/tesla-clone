@@ -9,8 +9,8 @@ const InteriorIntro = ({ backgroundImage, header, description }) => {
       >
         <div className="intro-list">
           <ul>
-            <li>15 inch display</li>
-            <li>Over the air software updates</li>
+            <li>15 inch display designed to improve over time</li>
+            <li>Over the air software updates  introduce new features, functionality and performance</li>
             <li>Expansive glass roof gives more headroom and UV protection</li>
           </ul>
         </div>

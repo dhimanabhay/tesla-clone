@@ -1,0 +1,81 @@
+.imageSlider-container {
+    background-color: black;
+    padding-top: 10vh;
+}
+
+.imageSlider-top {
+    height: 60vh;
+    width: 100vw;
+}
+
+.imageSlider-images {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imageSlider-image_div {
+    height: 100%;
+    width: max(820px, 90%);
+    background-position: center;
+    background-size: cover;
+    transition-duration: 0.5s;
+    /* transition: all ease-in-out 0.5s; */
+}
+
+/* .imageSlider-image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition-delay: 1000ms;
+    transition-duration: 1s;
+} */
+
+.imageSlider-bottom {
+    display: flex;
+    padding-top: 2vh;
+    gap: 1vh;
+    flex-direction: column;
+    
+    width: 40%;
+    height: 30vh;
+    margin: auto;
+}
+
+.imageSlider-title > h2 {
+    font-weight: lighter;
+}
+
+.imageSlider-description > p {
+    padding-top: 1vh;
+    line-height: 3vh;
+}
+
+.imageSlider-buttons {
+    display: none;
+    width: 3%;
+}
+
+.imageSlider-images:hover
+.imageSlider-buttons {
+    display: block;
+    cursor: pointer;
+}
+
+.imageSlider-slide {
+    display: flex;
+}
+
+.imageSlider-dots {
+    cursor: pointer;
+    color: rgb(92, 92, 92);
+}
+
+.dotActive {
+    color: rgb(255, 255, 255);
+    transition-duration: 1s;
+}

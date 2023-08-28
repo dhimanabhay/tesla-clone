@@ -1,16 +1,27 @@
 import "./model3.css";
-import model3Image from "../../components/images/home_item/model3.jpg";
-import Homesection from "../../components/homesection/Homesection";
 
+//Home Section
+import Homesection from "../../components/homesection/Homesection";
+import model3Image from "../../components/images/home_item/model3.jpg";
+
+//Hero Section
 import HeroImage from "../../components/heroimage/HeroImage";
 import model3Hero from "../../components/images/pages_item/model3-hero.jpg";
+
+//Image Grid
 import ImageGrid from "../../components/imagegrid/ImageGrid";
 
+//Car Skeleton
 import CarSkeleton from "../../components/car_skeleton/CarSkeleton";
 import model3_skeleton from "../../components/images/model3/model3-skeleton.jpg"
-import Y3Interior from "../../components/Y3_interior/Y3_Interior";
 
+//Interior
+import Y3Interior from "../../components/Y3_interior/Y3_Interior";
 import model3_interior from "../../components/images/model3/model3-interior.jpg"
+
+//Slider
+import ImageSlider from "../../components/image_slider/ImageSlider";
+
 const Model3 = () => {
 
   return (
@@ -48,6 +59,10 @@ const Model3 = () => {
         description="The inside of Model 3 is unlike any other vehicle with unrivaled technology, premium materials and plenty of legroom."
         backgroundImage={model3_interior}
         />
+      </section>
+      <section className="section">
+        <ImageSlider 
+        backgroundImage={model3_interior}/>
       </section>
     </div>
   );

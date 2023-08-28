@@ -44,5 +44,5 @@ p {
 .homeSection-overlay button:hover {
   background: white;
   color: black;
-  transition: all 0.3s;
+  transition: all ease-in-out .3s;
 }

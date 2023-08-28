@@ -6,11 +6,8 @@ export default function Header({ setShowSidebar }) {
   const [navbar, setNavbar] = useState(false);
   const [hide, setHide] = useState(false);
 
-  let nav = document.getElementById('nav')
-
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY)
       if (window.scrollY >= 50 && window.scrollY < 500) {
         setHide(true)
         setNavbar(false)
