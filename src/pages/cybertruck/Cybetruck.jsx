@@ -1,9 +1,9 @@
 import "./cybertruck.css"
 import Homesection from "../../components/homesection/Homesection"
-import cyberImage from "../../components/images/home_item/cybertruck.jpg"
+import cyberImage from "../../components/images/cybertruck/cybertruck.jpg"
 
 import HeroImage from "../../components/heroimage/HeroImage";
-import cyberHero from "../../components/images/pages_item/cyber-hero.jpg"
+import cyberHero from "../../components/images/cybertruck/cyber-hero.jpg"
 const Cybetruck = () => {
   return (
     <div className="container">

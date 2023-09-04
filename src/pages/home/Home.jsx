@@ -1,9 +1,9 @@
 import Homesection from "../../components/homesection/Homesection";
 import Homevideo from "../../components/homevideo/Homevideo";
-import modelSImage from "../../components/images/home_item/modelS.jpg";
-import model3Image from "../../components/images/home_item/model3.jpg";
-import modelXImage from "../../components/images/home_item/modelX.jpg";
-import cyberImage from "../../components/images/home_item/cybertruck.jpg";
+import modelSImage from "../../components/images/modelS/modelS.jpg";
+import model3Image from "../../components/images/model3/model3.jpg";
+import modelXImage from "../../components/images/modelX/modelX.jpg";
+import cyberImage from "../../components/images/cybertruck/cybertruck.jpg";
 
 import "./home.css";
 

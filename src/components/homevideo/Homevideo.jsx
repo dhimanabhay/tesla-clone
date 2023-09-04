@@ -4,8 +4,8 @@ import home_vid from "../images/home_item/home.mp4"
 const Homevideo = () => {
     return (
         <div >
-            {/* <video className="homeVideo-background" autoPlay muted loop playsinline> */}
-            <video className="homeVideo-background">
+            <video className="homeVideo-background" autoPlay muted loop playsinline>
+            {/* <video className="homeVideo-background"> */}
                 <source src={home_vid} type="video/mp4" />
             </video>
 

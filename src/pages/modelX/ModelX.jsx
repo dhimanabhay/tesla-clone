@@ -2,11 +2,11 @@ import "./modelX.css"
 
 //Home Section
 import Homesection from "../../components/homesection/Homesection"
-import modelXImage from "../../components/images/home_item/modelX.jpg"
+import modelXImage from "../../components/images/modelX/modelX.jpg"
 
 //Hero Section
 import HeroImage from "../../components/heroimage/HeroImage";
-import modelXHero from "../../components/images/pages_item/modelX-hero.jpg"
+import modelXHero from "../../components/images/modelX/modelX-hero.jpg"
 
 //Image Grid
 import ImageGrid from "../../components/imagegrid/ImageGrid";

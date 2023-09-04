@@ -1,12 +1,12 @@
 import "./modelS.css"
 
 //Home Section
-import modelSImage from "../../components/images/home_item/modelS.jpg"
+import modelSImage from "../../components/images/modelS/modelS.jpg"
 import Homesection from "../../components/homesection/Homesection"
 
 //Hero Section
 import HeroImage from "../../components/heroimage/HeroImage";
-import modelSHero from "../../components/images/pages_item/modelS-hero.jpg"
+import modelSHero from "../../components/images/modelS/modelS-hero.jpg"
 
 //Image Grid
 import ImageGrid from "../../components/imagegrid/ImageGrid";

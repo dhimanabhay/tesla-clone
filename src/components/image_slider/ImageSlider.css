@@ -10,9 +10,6 @@
 
 .imageSlider-images {
     height: 100%;
-    width: 100%;
-    margin: auto;
-
     display: flex;
     align-items: center;
     justify-content: center;
@@ -23,17 +20,10 @@
     width: max(820px, 90%);
     background-position: center;
     background-size: cover;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     /* transition: all ease-in-out 0.5s; */
+    /* transition: ease 0.3s; */
 }
-
-/* .imageSlider-image {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition-delay: 1000ms;
-    transition-duration: 1s;
-} */
 
 .imageSlider-bottom {
     display: flex;
